@@ -1,4 +1,8 @@
 const computerChoice = getComputerChoice();
+const humanChoice = getHumanChoice();
+
+console.log("Computer Choice: ", computerChoice);
+console.log("Human Choice: ", humanChoice);
 
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3);
@@ -9,4 +13,9 @@ function getComputerChoice() {
   } else {
     return "scissors";
   }
+}
+
+
+function getHumanChoice(){
+    return prompt("Enter your choice (rock, paper, scissors): ");
 }
